@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LiveDataActivity"
+        android:paddingTop="44dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+        在底层数据库更改时通知视图\n
+        LiveData 是一种可观察的数据存储器类。与常规的可观察类不同,\n
+        LiveData 具有生命周期感知能力，
+        意指它遵循其他应用组件（如 Activity、Fragment 或 Service）的生命周期。
+        这种感知能力可确保 LiveData 仅更新处于活跃生命周期状态的应用组件观察者。" />
+
+    </LinearLayout>
+</layout>
