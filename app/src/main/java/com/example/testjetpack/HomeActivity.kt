@@ -7,6 +7,7 @@ import androidx.databinding.DataBindingUtil
 import com.example.testjetpack.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
+    //https://developer.android.google.cn/samples?language=kotlin
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
