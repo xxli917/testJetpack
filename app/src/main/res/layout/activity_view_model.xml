@@ -9,34 +9,63 @@
             type="com.example.testjetpack.bean.StudentViewModel" />
 
     </data>
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".DataBindingActivity"
-        android:gravity="center">
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".DataBindingActivity"
+            android:padding="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ViewModel类旨在以注重生命周期的方式存储和管理界面相关的数据。
+            \n ViewModel 类让数据可在发生屏幕旋转等配置更改后继续留存。
+\n ViewModel 绝不能引用视图、Lifecycle 或可能存储对 Activity 上下文的引用的任何类。"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="viewmodel生命周期"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/viewmodel"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="ViewModel 确保数据在设备配置更改后仍然存在。Room 在数据库发生更改时通知 LiveData，LiveData 进而使用修订后的数据更新界面。"
+                />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{student.name}"
+                />
 
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@{student.name}"
-            />
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(student.age)}"
+                />
 
-        <TextView
-            android:id="@+id/age"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@{String.valueOf(student.age)}"
-            />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="改变年龄" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="改变年龄" />
 
 
-    </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
 </layout>

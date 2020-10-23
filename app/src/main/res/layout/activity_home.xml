@@ -4,38 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+        <variable
+            name="vm"
+            type="com.example.testjetpack.viewmodle.HomeModel" />
+        <variable
+            name="activity"
+            type="com.example.testjetpack.HomeActivity" />
+
 
     </data>
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".HomeActivity"
-        android:gravity="center">
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".HomeActivity"
+            android:gravity="center">
 
-        <Button
-            android:id="@+id/sunflower"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="sunflower" />
+            <Button
+                android:id="@+id/sunflower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sunflower" />
 
-        <Button
-            android:id="@+id/dataBinding"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="databinding" />
+            <Button
+                android:id="@+id/dataBinding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="databinding" />
 
-        <Button
-            android:id="@+id/viewmodle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="viewmodle" />
+            <Button
+                android:id="@+id/viewmodle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="viewmodle" />
 
-        <Button
-            android:id="@+id/livedata"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="livedata" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/livedata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="livedata" />
+
+            <Button
+                android:id="@+id/simpleViewMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="simpleViewMode" />
+
+            <Button
+                android:id="@+id/simpleArchitecture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="simpleArchitecture" />
+            <Button
+                android:id="@+id/recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="recyclerViewActivity"
+                android:onClick="@{()->activity.gotoRecycler()}"/>
+        </LinearLayout>
+
+    </ScrollView>
+
 </layout>

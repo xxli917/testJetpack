@@ -44,5 +44,12 @@
 
     <!-- minimum height of plant detail page so that the collapsing toolbar can be shown on every page -->
     <dimen name="plant_description_min_height">555dp</dimen>
+    <dimen name="photo_size">100dp</dimen>
+    <dimen name="default_margin">20dp</dimen>
+    <dimen name="product_item_min_height">200dp</dimen>
+    <dimen name="item_horizontal_margin">20dp</dimen>
+    <dimen name="comment_horizontal_margin">16dp</dimen>
+    <dimen name="comment_minHeight">64dp</dimen>
+    <dimen name="comment_padding">8dp</dimen>
 
 </resources>
